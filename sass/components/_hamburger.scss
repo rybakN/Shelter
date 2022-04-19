@@ -1,0 +1,39 @@
+
+  .hamburger {
+    display: block;
+    width: 30px;
+    height: 22px;
+    margin: 0 43px 17px 0;
+  }
+  
+  .hamburger hr {
+    height: 2px;
+    border: 0;
+    background: $color-primary;
+  }
+
+  .hamburger__our-pets {
+    display: block;
+    width: 30px;
+    height: 22px;
+    margin: 0 43px 17px 0;
+  }
+  
+  .hamburger__our-pets hr {
+    height: 2px;
+    border: 0;
+    background: $color-header;
+  }
+
+
+.hamburger {
+  @media (min-width: $mobile-width-max) {
+  display: none;
+  }
+}
+
+.hamburger hr {
+  @media (min-width: $mobile-width-max) {
+  display: none;
+  }
+}

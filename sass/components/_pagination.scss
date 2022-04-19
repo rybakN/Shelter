@@ -1,0 +1,29 @@
+.pagination {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+        max-width: 300px;
+        justify-content: space-between;
+        column-gap: 5px;
+    }
+}
+
+.pagination__item {
+    @include font (2.0rem, 2.3rem, $color-text-button);
+    letter-spacing: 0.06em;
+    margin: 0 10px 0 10px;
+    @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+        margin: 0;
+    }
+}
+
+.pagination_pre {
+    border-color: $color-menu;
+    color: $color-menu;
+    pointer-events: none;
+}
+
+.pagination_now {
+    background-color: $color-primary;
+}

@@ -1,0 +1,30 @@
+ul .menu__items {
+    display: inline-block;
+}
+
+.menu__items {
+    color: $color-menu;
+    list-style: none;
+    margin: 0 0 0 35px;
+}
+
+.menu__items_our-pets {
+    color: $color-text-button;
+}
+
+.menu__items:hover {
+    border-bottom: 3px solid $color-primary;
+    transition: 0.2s;
+}
+
+.active {
+    border-bottom: 3px solid $color-primary;
+}
+
+.menu {
+    font-family: Arial, Helvetica, sans-serif;
+    @include font (1.5rem, 2.4rem, $color-menu);
+    @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+        display: none;
+    }
+}

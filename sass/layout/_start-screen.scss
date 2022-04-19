@@ -1,0 +1,84 @@
+.preview {
+    @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.start-screen {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+        row-gap: 100px;
+    }
+    @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+        row-gap: 105px;
+    }    
+}
+
+.preview__title {
+    max-width: 310px;
+    margin: 163px 0 42px;
+    @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+        margin: 0 0 42px;
+    }
+    @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+        @include font (2.5rem, 3.2rem, $color-light);
+        max-width: 200px;
+        text-align: center;
+        margin: 0 0 42px;
+        letter-spacing: 0.06em;
+    }
+
+}
+
+.preview__text {
+    max-width: 460px;
+    font-family: Arial, Helvetica, sans-serif;
+    @include font (1.5rem, 2.4rem, $color-menu);
+    margin-bottom: 42px;
+    @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+        text-align: center;
+    }
+}
+
+.start-screen__image {
+    @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        * {
+            max-width: 569px;
+        }
+    }
+    @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        * {
+            max-width: 260px;
+        }
+    }
+}
+
+@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+    .start-screen__button-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+    .start-screen__button-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+}
