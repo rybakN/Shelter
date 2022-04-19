@@ -1,0 +1,31 @@
+.wrapper {
+    max-width: $content-width;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.start-screen__wrapper {
+    padding-top: 60px;
+    @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+        padding-top: 30px
+    }
+    @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+        padding: 30px 10px 0;
+    }
+}
+
+.our-pets__wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+        padding: 30px 10px 30px;
+    }
+}

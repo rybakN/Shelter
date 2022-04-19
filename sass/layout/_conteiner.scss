@@ -1,0 +1,23 @@
+.conteiner {
+    width: 100%;
+}
+
+.conteiner_start-screen, .conteiner_footer {
+    background: $color-background-header;
+}
+
+.conteiner_pets, .conteiner_donation {
+    background: $color-background;
+}
+
+.conteiner_our-pets {
+    position: fixed;
+    background: $color-light;
+}
+
+.conteiner__catalog-pets {
+    padding-top: 120px;
+    @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+        padding-top: 124px;
+    }
+}

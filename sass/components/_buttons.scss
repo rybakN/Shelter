@@ -1,0 +1,54 @@
+.button {
+    display: inline-block;
+    box-sizing: border-box;
+    @include font (1.7rem, 2.2rem, $color-text-button);
+    letter-spacing: 0.06em;
+    padding: 14px 45px;
+    border: 2px solid $color-primary;
+    border-radius: 100px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button_colored {
+    background: $color-primary;
+}
+
+.button_bordered {
+    border-color: $color-primary-light;
+}
+
+.button:hover {
+    border-color: $color-primary-light;
+    background: $color-primary-light;
+}
+
+.button-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 52px;
+    height: 52px;
+    border: 2px solid $color-primary;
+    border-radius: 100%;
+    text-align: center;
+    cursor: pointer;
+    @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+        order: 1;
+        margin: 0 13%;
+    }
+}
+
+.button-slider_right {
+    transform: rotate(-180deg);
+    @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+        order: 1;
+        margin: 0 13%;
+    }
+}
+
+.button-slider:hover {
+    border-color: $color-primary-light;
+    background: $color-primary-light;
+}

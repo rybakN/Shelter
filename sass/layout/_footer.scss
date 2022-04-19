@@ -1,0 +1,103 @@
+.wrapper__footer {
+    display: flex;
+    padding: 37px 40px 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+        padding: 13px 64px 0 64px;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 9%;
+        .footer__img {
+            margin: 0 50%
+        }
+    }
+    @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+        padding: 30px 10px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+        .footer__img {
+            max-width: 260px;
+            margin: 0 50%
+        }
+    }
+}
+
+.contact {
+    @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 50%;
+    }
+}
+
+.adress {
+    @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.contact__title {
+    @include font (3.5rem, 4.5rem, $color-light);
+    letter-spacing: 0.06em;
+    margin-top: 19px;
+    max-width: 280px;
+    @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+        @include font (2.5rem, 3.2rem, $color-light);
+        text-align: center;
+        margin: 0 0 0px;
+    }
+}
+
+.adress__title {
+    @include font (3.5rem, 4.5rem, $color-light);
+    letter-spacing: 0.06em;
+    margin-top: 19px;
+    max-width: 270px;
+    @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+        @include font (2.5rem, 3.2rem, $color-light);
+        text-align: center;
+        margin: 40px 0 40px 0;
+    }
+}
+
+.contact__text {
+    @include font (2.0rem, 2.3rem, $color-primary);
+    letter-spacing: 0.06em;
+}
+
+.adress__text {
+    @include font (2.0rem, 2.3rem, $color-primary);
+    letter-spacing: 0.06em;
+}
+
+.contact__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact__email {
+    margin: 40px 0;
+}
+
+.contact_img {
+    height: 32px;
+    margin-right: 20px;
+}
+
+.adress__item {
+    margin: 33px 0;
+    @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+        margin: 0 0 40px;
+        width: 100%;
+    }
+}
+
+
+
